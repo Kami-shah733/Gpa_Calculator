@@ -1,7 +1,22 @@
  
-*
-{box-sizing: border-box;
-overflow: hidden;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.5;
+}
+
 .input {
   background-color: #212121;
   max-width: 190px;
@@ -606,4 +621,98 @@ overflow: hidden;}
 
 .button1:hover::before {
   opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .form, .dim, .card {
+    width: 90% !important;
+    margin: 10px auto;
+  }
+
+  .input {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .button, .button1 {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .result {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .logo, .logo1, .logo2, .trail {
+    scale: 0.8;
+  }
+
+  .card {
+    height: auto;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .form, .dim, .card {
+    width: 80% !important;
+    margin: 10px auto;
+  }
+
+  .input {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+
+  .button, .button1 {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+
+  .card {
+    padding: 30px 20px;
+    height: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .form, .dim, .card {
+    width: 30%;
+  }
+
+  .button, .button1 {
+    padding: 14px 20px;
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 30px;
+  }
+}
+button, input {
+  transition: all 0.3s ease;
 }
